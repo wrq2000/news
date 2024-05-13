@@ -94,7 +94,7 @@ def handler():
     addr_from =      "vologzhaninovas@yandex.ru"                       
     msg['From']    =      addr_from                  
     msg['To']      = "a.vologzhaninov@adm.gazprom.ru; vologzhaninov@gmail.com" 
-    password  = "tflqfxqfhsowfose"
+
     msg['Subject'] = f' {d:%Y.%m.%d}'
     atts = get_attach(df) 
     for i in atts:
