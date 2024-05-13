@@ -33,7 +33,7 @@ def get_attach(df):
 
     return result
 
-    
+handler()
 
 
 def date_from_unix(d:int):
@@ -42,7 +42,7 @@ def date_from_unix(d:int):
 news_now_url = "https://www.newsnow.co.uk/h/Industry+Sectors/Energy+&+Utilities/Natural+Gas"
 UNIX_EPOCH = dt.datetime(1970, 1, 1)
 
-def handler(event, context):
+def handler():
     # Импорт библиотек
     response = requests.get(news_now_url)
     print('Данные получены')
